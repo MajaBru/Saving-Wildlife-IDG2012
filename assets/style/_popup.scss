@@ -1,0 +1,45 @@
+@import 'mixins-variables';
+@import './colors';
+
+.popup-wrapper {
+    visibility: hidden; // rather than display none. This option is better for accessibility according to sources. 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.432);
+    backdrop-filter: blur(3px);
+    z-index: 2;
+  }
+  
+  .popup {
+    background-color: $gray;
+    width: 300px;
+    padding: 2em;   
+    border-radius: 1em;
+    
+        h2 {
+            color: $white;
+        }
+        p {
+            font-size: 1rem;
+            margin-bottom: 1.5em;
+            color: $white;
+        }
+        a {
+            text-decoration: none;
+            margin-right: 1em;
+            background-color: white;
+        }
+        button {
+            background-color: white;
+            border: 1px solid black;
+        }
+  }
+  
+.popup button:focus, .popup a:focus {
+    outline: 3px solid $orange;
+    outline-offset: .2em;
+}

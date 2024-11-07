@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Saving Wildlife | Wildlife</title>
+    <link rel="stylesheet" href="./assets/style/index.css">
+    <script defer src="./assets/js/dropdown.js"></script>
+    <script defer src="./assets/js/hamburger.js"></script>
+    <script defer src="./assets/js/media.js"></script>
+    <script defer src="./assets/js/modal.js"></script>
+</head>
+<body>
+    <div class="popup-wrapper" aria-modal="true" role="dialog"  aria-labelledby="popup-title" aria-describedby="popup-description">
+        <div class="popup">
+        <h2 id="popup-title">Want to advocate for the animals?</h2>
+            <p id="popup-description">There are plenty of things you can do to contribute to help the wildlife.</p>
+            <a href="./make-change.html" class="button-style--light"  aria-label="Learn more about getting involved">Learn more</a>
+            <button type="button" class="close-popup button-style--light" aria-label="Close and return to website">Close</button>
+        </div>
+    </div>
+    <header id="header">
+        <div id="site-title">SAVING WILDLIFE</div>    
+        <a class="skip-to-content" href="#main_wildlife">Skip to main content</a>   
+        <nav class="navbar" role="navigation" aria-expanded="false" aria-label="Main Menu">
+            <button class="menu-toggle" aria-expanded="false" aria-label="Main menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul>
+                <li><a class="listitem" href="index.html">Home</a></li>
+                <li class="submenu-wrapper" aria-label="Sub menu">
+                    <button class="submenu-btn listitem" aria-controls="submenu-content-one" aria-expanded="false" aria-haspopup="true">About us 
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+                        <div class="submenu-content" id="submenu-content-one">
+                            <a class="listitem" href="who-we-are.html">Who are we?</a>
+                            <a class="listitem" href="our-work.html">Our work</a>
+                        </div>
+                    </button>
+                </li>
+                <li class="submenu-wrapper" aria-label="Sub menu">
+                    <button class="submenu-btn listitem" aria-controls="submenu-content-two" aria-expanded="false" aria-haspopup="true">Get involved 
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+                        <div class="submenu-content" id="submenu-content-two">
+                            <a class="listitem" href="make-change.html">Make a change</a>
+                        </div>
+                    </button>
+                </li>
+                <li><a class="listitem current" href="wildlife.html">Wildlife</a></li>
+                <li><a class="listitem" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main_wildlife">
+        <section>
+            <h1>The nordic wildlife is threatened</h1>
+                <p>There are many species found within the nordic wildlife. But some of the most remarkable creatures that
+                    are vital for the ecosystem, are endangered. In the chart below, you can learn about which animals are endangered.
+                </p>
+
+        </section>        
+        
+        <section class="table-and-audio">
+            <table tabindex="0" aria-labelledby="table-caption"> 
+            <caption id="table-caption">Chart of endangered animals</caption>
+            <thead>
+                <tr>
+                    <td></td>
+                    <th scope="col" tabindex="0">Type</th>
+                    <th scope="col" tabindex="0">Endangerment degree</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row" tabindex="0">Wolf</th> 
+                    <td tabindex="0">Carnivore</td>
+                    <td tabindex="0">Critically endangered</td>
+                </tr>
+                <tr>
+                    <th scope="row" tabindex="0">Polar bear</th>
+                    <td tabindex="0">Carnivore</td>
+                    <td tabindex="0">Moderately endangered</td>
+                </tr>
+                <tr>
+                    <th scope="row" tabindex="0">Wild reindeer</th>
+                    <td tabindex="0">Herbivore</td>
+                    <td tabindex="0">Critically endangered</td>
+                </tr>
+                <tr>
+                    <th scope="row" tabindex="0">Hedgehog</th>
+                    <td tabindex="0">Herbivore</td>
+                    <td tabindex="0">Moderately endangered</td>
+                </tr>
+                <tr>
+                    <th scope="row" tabindex="0">Arctic fox</th>
+                    <td tabindex="0">Omnivore</td>
+                    <td tabindex="0">Critically endangered</td>
+                </tr>
+            </tbody>
+        </table>
+            <div>
+            <h2>Hear more about the arctic fox of Norway</h2>
+            <div class="audio-video-container">
+                <audio aria-label="Audio" class="player">
+                    <source src="./assets/audio/arctic-fox.mp3" type="audio/mpeg"/>
+                </audio>
+                <div class="media-controller--audio">
+                    <p class="duration">00:00</p>
+                    <div>
+                    <button type="button" aria-label="Play and pause audio" class="play-pause-btn button-style--dark">Play</button>
+                    <button type="button" aria-label="Skip backward 10 seconds" class="bwd-btn button-style--dark">- 10</button>
+                    <button type="button" aria-label="Skip forward 10 seconds" class="fwd-btn button-style--dark">+ 10</button>
+                    <button type="button" class="audio-btn button-style--dark">Mute</button>
+                    </div>
+                </div>
+                <button class="transcript-btn button-style--dark" aria-expanded="false" type="button">Show transcript</button>
+            </div>
+            </div>
+         </section>
+        
+        <section class="transcript">
+            <h2>Transcript: The arctic fox</h2>
+            <i>( music )</i>
+            <p>Arctic foxes are built for the cold, </p>
+            <p>with thick white fur that even covers the pads of their feet, </p>
+            <p>and ears that are rounded to make them less susceptible to frostbite.</p>
+            <p>These captive foxes are part of a government funded</p>
+            <p>effort in Dovre to preserve the species.</p>
+            <p>Arctic foxes are critically endangered in Norway, </p>
+            <p>and this breeding programme in the Nordryggen mountains is trying to bring them back from the brink.</p>
+            <p>The senior scientist here is a Arild Landa.</p>
+            <p>Because the arctic fox has a very nice and valuable winter fur, </p>
+            <p>it was hunted down to very low populations in the beginning of 1900's.</p>
+            <p>A nice blue arctic fox skin was paid with 800 kr, </p>
+            <p>which equals to one year salary at that time.</p>
+        </section>
+        <section class="wolf_section">
+            <h2>FOCUS: The Norwegian wolf controversy</h2>
+
+            <p>In Norway, the wolf is listed on the red list as "critically endangered". 
+                In the winter of 2016/2017, 105-112 wolves were detected with full or partial residence on Norwegian
+                    land - 54-56 who only stayed within the land border, and 51-56 who lived on the Norwegian 
+                    and Swedish sides. But the number of wolves varies greatly mortality, and may suddenly be 
+                    down again to 30-40 wolves on the Norwegian side.</p>
+
+            <p>The wolf plays a significant role in the dynamics of the northern ecosystems. 
+                Behavioral patterns in reindeer, bison, musk deer, elk and a number of other game 
+                species reflect an evolutionary adaptation to wolves. The Scandinavian ecosystems have 
+                in practice been without wolves for 100 years, and have developed completely differently 
+                than they would have done with wolves present.</p>
+                <!-- FROM: https://www.storerovdyr.no/fakta/store-rovdyr/ulv/ -->
+        </section>
+        <section class="video-audio-wrapper">
+            <h2>A look into the wolf situation in Norway</h2>
+            <div class="audio-video-container">
+                <video aria-label="Video" id="video" class="player" preload="metadata">
+                    <source src="./assets/video/wolfs.mp4" type="video/mp4" />
+                    <track
+                        label="English"
+                        kind="subtitles"
+                        srclang="en"
+                        src="./assets/video/wolfs.vtt"
+                        default />
+                </video>
+                <div class="media-controller--video">
+                    <p class="duration">00:00</p>
+                    <div>
+                    <button type="button" class="play-pause-btn button-style--dark">Play</button>
+                    <button type="button" aria-label="Skip backward 10 seconds" class="bwd-btn button-style--dark">- 10</button>
+                    <button type="button" aria-label="Skip forward 10 seconds" class="fwd-btn button-style--dark">+ 10</button>
+                    <button type="button" class="audio-btn button-style--dark">Mute</button>
+                    </div>
+                </div>
+            </div>
+            <button class="transcript-btn button-style--dark" aria-expanded="false" type="button">Show transcript</button>
+            <section class="transcript">
+                <h2>Transcript: The wolf controversy</h2>
+                    <i>( Sheep Baaing )</i>
+                    <p>In the grasslands above Mjøsa-fjord, farmers have been grazing their sheep for centuries.</p>
+                    <i>( Sheep bells ringing )</i>
+                    <p>Last year, the farmer here lost 40% of his flock to wolves.</p>
+                    <p>Erling Åseng represents farmers in the area, and wants the call of about two thirds of Norway's wild wolves to go ahead.</p>
+                    <i>( Sheep Baaing )</i>
+                    <p>They get psychologically tired because of all this threat to find carcasses during the summer, dead and half dead.</p>
+                    <p>It's not a situation you can live with for years, then you give up farming simply, and that has happened.</p>
+                    <p>A few hours drive north into the Norwegian wilderness,</p>
+                    <p>and wolves at this reserve roam in a large fenced-off area.</p>
+                    <i>( Wolf barks in distance )</i>
+                    <p>Norway has just under 70 wolves living in the wild, and others like this group which live in sanctuaries.</p>
+                    <i>( Howling wolf )</i>
+                    <p> The wolves here are used to human beings, meaning we're allowed to get this close, but they still like to keep their distance.</p>
+                    <p>Campaigners say this is a creature which is often stigmatized and is largely misunderstood.</p>
+                    <p>The planned cull then has alarmed those who believe wolves in the wild are persecuted and are already at risk from illegal hunting.</p>
+                    <i>( Wolves steps on crisp grass )</i>
+                    <i>( Wolf sniffing )</i>
+                    <p>Some environmentalists say on a national level, under two percent of sheep which die are killed by wolves.</p>
+                    <i>( Three people walking in track )</i>
+                    <p>So to spot one today we'd have to be very, very lucky really.</p>
+                    <p>Really, really lucky.</p>
+                    <p>Most people in Norway will never see a wolf in the wild.</p>
+                    <p>Conservationists close to Oslo are monitoring an area using special cameras to track wolves.</p>
+                    <i>( Monitoring equipment synthesizing )</i>
+                    <p>The population has never been very high.</p>
+                    <p>Now it's a little bit higher, but it's still only like between 65 and 70 in the rituals that live only in Norway,</p>
+                    <p>and to allow a hunt that will take away like the thirst of that, it's too much for such a small population.</p>
+                    <p>More than 40 years after wolves were given protected status here, the decision to control their numbers is controversial,</p>
+                    <p>putting farmers who face challenging times against environmentalists who are determined to safeguard the future of the wolf in Norway.</p>
+                    <p>Emma Hayward, Al Jazeera in Oslo.</p>
+            </section>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <a id="backtotop" class="button-style--light" href="#header">Back to top</a>
+        <div>
+            <p>Multiple text elements retrieved from <a id="footer-link" href="https://www.villedyr.no/">NOAH'S Webpages on wild animals</a></p>
+            <p>Link to: <a aria-label="video on youtube" href="https://www.youtube.com/watch?v=fERSFh615cc">video</a> and <a aria-label="audio on youtube" href="https://www.youtube.com/watch?v=aSQiLm54gUs">audio</a></p>
+        </div>
+    </footer>   
+</body>
+</html>

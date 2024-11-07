@@ -1,0 +1,109 @@
+@import '../colors';
+@import '../mixins-variables';
+
+#main_contact {
+    margin: $main_margin--mobile;
+    @include flex-center;
+    flex-direction: column;
+
+    h1 {
+        margin-top: 3em;
+    }}
+.form-wrapper {
+    p {
+        margin-bottom: 2em;
+        font-size: 1rem;
+    }
+}
+.form-container {
+    @include flex-center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2em;
+
+    .input-field {
+    margin-top: .7em;
+    border: 2px solid $gray;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1.12rem;
+        &:focus {
+            outline-offset: 0;
+        }
+    }
+
+    .error-name, .error-email, .error-textfield {
+        display: none;
+        margin-top: .7em;
+        display: none;
+        font-size: 0.875rem;
+        font-style: italic;
+        text-indent: 1em;
+        font-weight: bold;
+        opacity: .9;
+        color: #b10000;
+    }
+
+    .submit-btn {
+        width: 100%;
+        margin-bottom: 3em;
+        margin-left: 0;
+    }
+
+    textarea {
+        width: 100%;
+        height: 140px;
+        resize:vertical;
+    }
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: safe;
+    justify-items: auto;
+    gap: 5em;
+    position: relative;
+    margin-bottom: 6em;
+    &::before {
+        content: " ";
+        position: absolute;
+        width: 2px;
+        top: 0;
+        height: 70px;
+        left: -20px;
+        background-color: $orange;
+    }
+        address {
+            width: 300px;
+            display: flex;
+            gap: .2em;
+            flex-direction: column;
+            align-items: start;
+            p {
+                font-size: 1.12rem;
+            }
+            a {
+                color: black;
+            }
+            #address {
+                margin-bottom: 1em;
+            }
+        }
+}
+
+@media (min-width: 850px) {
+
+    #main_contact {
+        margin: $main_margin;
+
+        hr {
+            display: none;
+        }
+    
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    }
+}

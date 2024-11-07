@@ -1,0 +1,12 @@
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+$main_margin: 0 15em;
+$main_margin--mobile: 0 1.5em;
+
+$pg-distance: 2em;
+
+$fontsize-main: 1.35rem;

@@ -1,0 +1,88 @@
+@import '../colors';
+@import '../mixins-variables';
+
+#intro_textbox {
+    background-color: $green;
+    padding: 3em;
+    min-height: 200px;
+    max-height: auto;
+    color: $soft-white;
+    @include flex-center;
+    align-items: flex-start;
+    & *:focus {
+        outline: 3px solid $soft-white;
+    }
+    .intro_inner {
+        @include flex-center;
+        align-items: flex-start;
+        flex-direction: column;
+        h1 {
+            margin-bottom: 1em;
+        }
+        a {
+            margin-top: 2em;
+            text-decoration: none;
+        }
+    }
+}
+
+#gallery_and_text {
+    margin: $main_margin--mobile;
+    max-width: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    margin: 3em 0;
+    margin-top: 0;
+    .imagewrapper {
+        text-align: center;
+    }
+    img {
+        width: 100%;
+        max-width:420px;
+        /* height: auto; */
+        
+    }
+
+    .text {
+        margin-top: 1em;
+        margin: 0 3em;
+    }
+}
+
+@media (min-width: 850px) {
+    #intro_textbox {
+        padding: 3em 10em;
+
+        p {
+            font-size: $fontsize-main;
+        }
+    }
+
+    #gallery_and_text {
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 8em;
+        margin-top: 7em;
+
+        & p {
+            margin-top: unset;
+            position: relative;
+            font-size: $fontsize-main;
+     }
+        p::before {
+        content: " ";
+        position: absolute;
+        top: 5px;
+        left: -15px;
+        background-color: $orange;
+        width: 2px;
+        height: 60px;
+        }
+
+        .text {
+            margin: 0 4.5em;
+        }
+    }
+}

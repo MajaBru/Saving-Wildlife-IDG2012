@@ -1,0 +1,37 @@
+@import './pages/home';
+@import './layout';
+
+
+.button-style--light {
+    background-color: $soft-white;
+    border: none;
+    padding: 1em .7em;
+    border-radius: 6px;
+    color: $black;
+    font-weight: 700;
+    font-size: 0.87rem;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+        &:hover, &:focus {
+            background-color: $white;
+        }
+
+}
+
+.button-style--dark {
+background-color: $gray;
+color: $soft-white;
+border: none;
+padding: 1em .7em;
+border-radius: 6px;
+font-weight: 700;
+font-size: 0.87rem;
+margin: 8px;
+cursor: pointer;
+transition: background-color .3s ease-in-out;
+    &:hover, &:focus {
+        background-color: $black;
+    }
+
+
+}
